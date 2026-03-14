@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Đăng ký Facebook</title>
+
+<style>
+
+body{
+font-family:Arial;
+background:#e4e6eb;
+}
+
+.container{
+width:450px;
+margin:50px auto;
+background:white;
+padding:25px;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo{
+background:#4267B2;
+color:white;
+text-align:center;
+font-size:35px;
+padding:10px;
+margin-bottom:20px;
+}
+
+h1{
+margin-bottom:5px;
+}
+
+p{
+color:#555;
+}
+
+input,select{
+width:100%;
+padding:10px;
+margin-top:10px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+.row{
+display:flex;
+gap:10px;
+}
+
+.row input{
+width:50%;
+}
+
+.birth{
+display:flex;
+gap:10px;
+margin-top:10px;
+}
+
+.birth select{
+flex:1;
+}
+
+.gender{
+margin-top:15px;
+}
+
+.gender label{
+margin-right:20px;
+}
+
+button{
+width:100%;
+background:#42b72a;
+color:white;
+border:none;
+padding:12px;
+font-size:18px;
+margin-top:20px;
+border-radius:5px;
+cursor:pointer;
+}
+
+button:hover{
+background:#36a420;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">facebook</div>
+
+<h1>Đăng ký</h1>
+<p>Luôn miễn phí.</p>
+
+<div class="row">
+<input type="text" placeholder="Họ">
+<input type="text" placeholder="Tên">
+</div>
+
+<input type="text" placeholder="Số di động hoặc email">
+<input type="password" placeholder="Mật khẩu mới">
+
+<h3>Ngày sinh</h3>
+
+<div class="birth">
+<select>
+<option>Ngày</option>
+</select>
+
+<select>
+<option>Tháng</option>
+</select>
+
+<select>
+<option>Năm</option>
+</select>
+</div>
+
+<div class="gender">
+<label><input type="radio" name="gt"> Nữ</label>
+<label><input type="radio" name="gt"> Nam</label>
+</div>
+
+<button>Tạo tài khoản</button>
+
+</div>
+
+</body>
+</html>

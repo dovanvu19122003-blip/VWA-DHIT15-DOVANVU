@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>To Do List</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#eee;
+}
+
+.form-box{
+    width:600px;
+    background:white;
+    border:1px solid #ccc;
+    margin:40px auto;
+    padding:20px;
+}
+
+.header{
+    background:#d84b2a;
+    color:white;
+    padding:10px;
+    font-weight:bold;
+}
+
+h2{
+    margin-top:10px;
+}
+
+label{
+    display:block;
+    margin-top:10px;
+    font-weight:bold;
+}
+
+input[type=text], textarea, select{
+    width:100%;
+    padding:6px;
+    margin-top:5px;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+}
+
+.row div{
+    flex:1;
+}
+
+.date-box{
+    display:flex;
+    gap:10px;
+}
+
+.date-box input{
+    width:70px;
+}
+
+button{
+    margin-top:15px;
+    padding:6px 15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="form-box">
+
+<div class="header">WuFoo</div>
+
+<h2>To Do List</h2>
+
+<label>Item</label>
+<input type="text">
+
+<label>Description</label>
+<textarea rows="4"></textarea>
+
+<div class="row">
+<div>
+<label>Priority</label>
+<select>
+<option>Low</option>
+<option>Medium</option>
+<option>High</option>
+</select>
+</div>
+
+<div>
+<label>Category</label>
+<select>
+<option>Personal</option>
+<option>Work</option>
+<option>Study</option>
+</select>
+</div>
+</div>
+
+<label>Due Date</label>
+<div class="date-box">
+<input type="text" placeholder="MM">
+<input type="text" placeholder="DD">
+<input type="text" placeholder="YYYY">
+</div>
+
+<label>Status</label>
+<input type="checkbox"> Done.
+
+<br>
+
+<button>Submit</button>
+
+</div>
+
+</body>
+</html>
