@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Card sản phẩm</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center; /* căn giữa ngang */
+        align-items: center;     /* căn giữa dọc */
+        height: 100vh;
+        background-color: #f5f5f5;
+    }
+
+    .card {
+        width: 300px;
+        background: white;
+        border-radius: 15px;
+        border: 2px solid gold;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .card h2 {
+        font-size: 18px;
+        margin: 15px 0;
+    }
+
+    .price {
+        color: red;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background: black;
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: gold;
+        color: black;
+    }
+</style>
+
+</head>
+<body>
+
+<div class="card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhSxETRkrILV8mmHlqo5rnfN1-UqwuqJxIGw&s" alt="Laptop">
+    <h2>Dell Alienware 16 Aurora (2025)</h2>
+    <div class="price">39.690.000đ</div>
+    <a href="#" class="btn">Mua ngay</a>
+</div>
+
+</body>
+</html>

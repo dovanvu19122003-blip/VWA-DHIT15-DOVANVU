@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Layout Blog</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* ===== HEADER FIXED ===== */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; /* cố định chiều cao */
+    background: #111;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1000;
+  }
+
+  header a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+  }
+
+  header a:hover {
+    text-decoration: underline;
+  }
+
+  /* ===== LAYOUT ===== */
+  .container {
+    display: flex;
+    margin-top: 60px; /* đúng bằng header */
+  }
+
+  /* ===== SIDEBAR STICKY ===== */
+  .sidebar {
+    width: 220px;
+    padding: 15px;
+    background: #f2f2f2;
+    height: calc(100vh - 60px);
+    position: sticky;
+    top: 60px;
+    box-sizing: border-box;
+  }
+
+  .sidebar h3 {
+    margin-top: 0;
+  }
+
+  .sidebar p {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+
+  .sidebar p:hover {
+    color: blue;
+  }
+
+  /* ===== CONTENT SCROLL ===== */
+  .content {
+    flex: 1;
+    padding: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+
+  .content h1 {
+    margin-top: 0;
+  }
+
+  .post {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div><b>MyBlog</b></div>
+  <div>
+    <a href="#">Home</a>
+    <a href="#">Posts</a>
+    <a href="#">About</a>
+  </div>
+</header>
+
+<div class="container">
+  <!-- SIDEBAR -->
+  <div class="sidebar">
+    <h3>Danh mục</h3>
+    <p>HTML/CSS</p>
+    <p>JavaScript</p>
+    <p>React</p>
+    <p>Node.js</p>
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+    <h1>Tiêu đề bài viết</h1>
+    <p>Cuộn xuống để kiểm tra header fixed, sidebar sticky và content scroll.</p>
+
+    <div class="post">Đoạn 1...</div>
+    <div class="post">Đoạn 2...</div>
+    <div class="post">Đoạn 3...</div>
+    <div class="post">Đoạn 4...</div>
+    <div class="post">Đoạn 5...</div>
+    <div class="post">Đoạn 6...</div>
+    <div class="post">Đoạn 7...</div>
+    <div class="post">Đoạn 8...</div>
+    <div class="post">Đoạn 9...</div>
+    <div class="post">Đoạn 10...</div>
+    <div class="post">Đoạn 11...</div>
+  </div>
+</div>
+
+</body>
+</html>

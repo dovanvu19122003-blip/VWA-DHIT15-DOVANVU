@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab03-ex1</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .box {
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            margin: 15px auto;
+            color: black;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* 4 màu */
+        .div1 {
+            background-color: red;
+        }
+
+        .div2 {
+            background-color: green;
+        }
+
+        .div3 {
+            background-color: blue;
+            color: white;
+        }
+
+        .div4 {
+            background-color: yellow;
+        }
+
+        /* Hiệu ứng hover */
+        .box:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box div1">div-1</div>
+    <div class="box div2">div-2</div>
+    <div class="box div3">div-3</div>
+    <div class="box div4">div-4</div>
+
+</body>
+</html>
