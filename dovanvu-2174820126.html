@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <title>ĐĂNG KÝ THÀNH VIÊN</title>
+        <style>
+            body { font-family: Arial, Helvetica, sans-serif;
+            display:flex ; justify-content: center;}
+            .form-container {border: 1px splid #ccc; padding: 20px;width: 400px; border-radius: 5px ;}
+            h2 { color:green; text-align: center;}
+            .field { margin-bottom: 10px    ;}
+            label {display:block;font-weight: bold;margin-bottom: 5px ;font-size: 14px;}
+            input[type="text"], input[type="email"],input[type="password"], 
+            textarea {width:100%; padding:8px;box-sizing: border-box;border: 1px solid #ddd}
+            small {color:gray ; font-size: 11px;}
+            .btn-submit { background-color: green ; color:white border:none;padding:10px 20px ; cursor: pointer;display:block; margin:10px auto;}
+        </style>
+    </head>
+    <body>
+        <div class="form-container">
+            <h2>ĐĂNG KÝ THÀNH VIÊN</h2>
+            <form id="regFrom">
+                <div class="field">
+                    <label>HO VA TEN </label>
+                    <input type="text" id="fullname" placeholder="Nhap ho va Ten" required>
+                </div>
+                <div class="field">
+                    <label>Emaill </label>
+                    <input type="emaill" id="emaill" placeholder="Nhap email" required>
+                    <small>vi du: dovanvu123@gmail.com</small>
+                </div>
+                <div class="field">
+                    <label>So dien thoai</label>
+                    <input type="text" id="phone" placeholder="Nhap so dien thoai" pattern="[0-9] {10,11}" required>
+                    <small>vi du: 0123456789 </small>
+                </div>
+                <div class="field">
+                    <label>Gioi Tinh</label>
+                    <input type="radio" name="gender"value="Nam" checked> Nam
+                    <input type="radio" name="gender"value="Nu" checked> Nu
+                    <input type="radio" name="gender"value="Khac" checked> Khac
+                </div>
+                <div class="field"> 
+                    <label>so thich</label>
+                    <input type="checkbox"> bong da
+                    <input type="checkbox"> am nhac
+                    <input type="checkbox"> du lich
+                    <input type="checkbox"> doc sach
+                </div>
+                <div class="field">
+                    <label> mat khau </label>
+                    <input type="password"
+                    id="pass" required>
+                </div>
+                <div class="field">
+                    <label>nhap lai  mat khau </label>
+                    <input type="password"
+                    id="repass" required>
+                </div>
+                <div class="field">
+                    <label> dia chi </label>
+                    <textarea id="address" rows="3"></textarea>
+                </div>
+                <button type="submit"class="btn-submit">Dang Ky</button>
+            </form>
+        </div>
+        <script>document.getElementById('regForm').onsubmit =function(e) {
+            const pass =
+            document.getElementById('pass').value;
+            const repass =
+            document.getElementById('phone').value
+            if (!/^\d+$/.test(phone)) {
+                alert("so dien thoai chi duoc nhap so!");
+                e.preventDefault();
+                return;
+            }
+            if (pass !== repass) {
+                alert("mat khau khong khop!");
+                e.preventDefault();
+                return;
+            }
+            alert("dang ky thanh cong!");
+        };
+        </script>
+    </body>
+</html>
